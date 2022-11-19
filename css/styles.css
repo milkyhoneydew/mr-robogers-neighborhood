@@ -16,3 +16,16 @@ body {
   font-family: 'Press Start 2P', cursive;
   color:rgb(10, 218, 233)
 }
+
+button {
+  color: black;
+  background-color: rgb(211,106,42);
+  border-color: rgb(211,106,42);
+}
+.btn {
+  font-family: 'Domine', serif;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
