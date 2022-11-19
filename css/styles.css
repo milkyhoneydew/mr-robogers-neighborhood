@@ -1,5 +1,18 @@
-@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .hidden {
     display: none;
   }
+
+body {
+  background-image: url("../images/little-robot.jpg");
+  background-size: cover;
+  font-family: 'Domine', serif;
+  color: rgb(103, 226, 21);
+}
+
+#output {
+  font-family: 'Press Start 2P', cursive;
+  color:rgb(10, 218, 233)
+}
