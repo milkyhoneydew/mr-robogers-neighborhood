@@ -1,3 +1,5 @@
+//Business Logic
+
 function returnArray(num) {
   let numArray = [];
   for (i = 0; i <= num; i++) {
@@ -21,6 +23,21 @@ function neighbor(num) {
   })
   return neighborArray;
 }
+
+//User Interface Logic
+
+window.addEventListener("load", function() {
+  const form = document.querySelector("form");
+
+  function robotSpeaks(e) {
+    let inputNum = parseInt(document.querySelector("input#number").value);
+    let outputArray = neighbor(inputNum);
+    
+    e.preventDefault();
+  }
+
+  form.addEventListener("submit", );
+})
 
 // function beep(num) {
 //   let array = returnArray(num);
