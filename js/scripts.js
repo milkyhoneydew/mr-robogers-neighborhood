@@ -34,12 +34,10 @@ window.addEventListener("load", function() {
 
   function robotSpeaks(e) {
     let inputNum = parseInt(input.value);
-    
     paraDiv.classList.add("hidden");
 
     if (inputNum > 0) {
       let output = neighbor(inputNum).join(" ");
-    
       paragraph.innerText = output;
       paraDiv.classList.remove("hidden");
     }
