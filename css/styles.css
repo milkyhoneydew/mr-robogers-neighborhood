@@ -12,16 +12,29 @@ body {
   color: rgb(103, 226, 21);
 }
 
+h2 {
+  color: rgb(250, 82, 118)
+}
+label {
+  color: rgb(250, 82, 199)
+}
+
 #output {
+  size: 50 em;
+}
+
+p {
   font-family: 'Press Start 2P', cursive;
-  color:rgb(10, 218, 233)
+  color: rgb(236, 252, 92);
+  font-size: 2em;
 }
 
 button {
   color: black;
-  background-color: rgb(211,106,42);
-  border-color: rgb(211,106,42);
+  background-color: rgb(242,98,0);
+  border-color: rgb(242,98,0);
 }
+
 .btn {
   font-family: 'Domine', serif;
 }
