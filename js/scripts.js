@@ -28,15 +28,28 @@ function neighbor(num) {
 
 window.addEventListener("load", function() {
   const form = document.querySelector("form");
+  let paragraph = document.querySelector("p");
+  let paraDiv = document.querySelector("div#output");
+  let input = document.querySelector("input#number");
 
   function robotSpeaks(e) {
-    let inputNum = parseInt(document.querySelector("input#number").value);
-    let outputArray = neighbor(inputNum);
+    let inputNum = parseInt(input.value);
     
+    paraDiv.classList.add("hidden");
+
+    if (inputNum > 0) {
+      let output = neighbor(inputNum).join(" ");
+    
+      paragraph.innerText = output;
+      paraDiv.classList.remove("hidden");
+    }
+    
+    input.value = "";
+
     e.preventDefault();
   }
 
-  form.addEventListener("submit", );
+  form.addEventListener("submit", robotSpeaks);
 })
 
 // function beep(num) {
