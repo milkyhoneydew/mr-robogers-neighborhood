@@ -39,6 +39,8 @@ function neighbor(num) {
       return "beep";
     } else if (element.toString().includes("2") && !element.toString().includes("3")) {
       return "boop";
+    } else if (element.toString().includes("3")) {
+      return "Won't you be my neighbor?";
     } else {
       return element;
     }
