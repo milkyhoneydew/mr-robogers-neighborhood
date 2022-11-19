@@ -17,3 +17,19 @@ function beep(num) {
   })
   return beepArray;
 }
+
+function boop(num) {
+  let array = returnArray(num);
+  let boopArray = array.map(function(element) {
+    if (element.toString().includes("1") && !element.toString().includes("2")) {
+      return "beep";
+    } else if (element.toString().includes("2")) {
+      return "boop";
+    } else {
+      return element;
+    }
+  })
+  return boopArray;
+}
+
+ 
