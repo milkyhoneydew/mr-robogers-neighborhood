@@ -32,4 +32,16 @@ function boop(num) {
   return boopArray;
 }
 
- 
+function neighbor(num) {
+  let array = returnArray(num);
+  let neighborArray = array.map(function(element) {
+      if (element.toString().includes("1") && !element.toString().includes("2") && !element.toString().includes("3")) {
+      return "beep";
+    } else if (element.toString().includes("2") && !element.toString().includes("3")) {
+      return "boop";
+    } else {
+      return element;
+    }
+  })
+  return neighborArray;
+}
